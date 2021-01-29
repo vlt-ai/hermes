@@ -1,6 +1,6 @@
 {
-  "name": "@vlt-ai/hermes",
-  "version": "1.2.2",
+  "name": "volt-terminal",
+  "version": "1.0.1",
   "description": "React Component for interacting with a terminal interface.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -8,9 +8,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vlt-ai/hermes.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
