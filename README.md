@@ -2,7 +2,7 @@
 
 Clone Package
 ```
-git clone https://github.com/vlt-ai/volt-terminal.git
+git clone https://github.com/vlt-ai/hermes.git
 ```
 Install yalc which is a local npm package manager
 ```
@@ -14,7 +14,7 @@ yarn build && yalc publish
 ```
 Replace the installed version with the locally built package in ragnarok.
 ```
-yalc add volt-terminal
+yalc add @vlt-ai/hermes
 ```
 Install dependencies to ragnarok.
 ```
@@ -32,16 +32,16 @@ npm login --scope=@vlt-ai --registry=https://npm.pkg.github.com
 ```
 Install package with NPM or YARN and add it to your development dependencies:
 ```
-npm install @vlt-ai/volt-terminal@1.0.2
+npm install @vlt-ai/hermes
 ```
 OR
 ```
-yarn add @vlt-ai/volt-terminal@1.0.2
+yarn add @vlt-ai/hermes
 ```
 
 ## Usage
 ```
-import { ReactTerminal } from "@vlt-ai/volt-terminal";
+import { ReactTerminal } from "@vlt-ai/hermes";
 
 function MyComponent(props) {
   // define custom text here
@@ -57,7 +57,7 @@ function MyComponent(props) {
 
 Also make sure to wrap the main mountpoint around the `TerminalContextProvider`. This retains the state even when the component is unmounted and then mounted back:
 ```
-import { TerminalContextProvider } from "@vlt-ai/volt-terminal";
+import { TerminalContextProvider } from "@vlt-ai/hermes";
 
 ReactDOM.render(
   <TerminalContextProvider>
